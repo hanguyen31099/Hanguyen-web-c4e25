@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New bike</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="tex/css" media="all">
+    <style>
+        body {
+            background-image: url("https://images.wallpaperscraft.com/image/mountains_lake_tops_trees_118251_1920x1080.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 1% 35%;
+	        font-size: 20px;
+	        font-style: Verdana, Tahoma, sans-serif;
+        }
+        
+        h2 {
+	        margin-bottom: 20px;
+	        color: #474E69;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #E5E5E5;
+            width: 200px;
+            color:black;
+            box-shadow: rgba(7, 7, 7, 0.1) 0px 0px 8px;
+            -moz-box-shadow: rgba(3, 3, 3, 0.1) 0px 0px 8px;
+            -webkit-box-shadow: rgba(5, 5, 5, 0.1)px 8px;		
+        }
+
+        textarea {
+            width: 400px;
+            height: 150px;
+            max-width: 400px;
+            line-height: 18px;
+        }
+
+        input:hover, textarea:hover,
+        input:focus, textarea:focus {
+            border-color: 1px solid #C9C9C9;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 7px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 7px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 7px;	
+        }
+
+        .form label {
+            margin-left: 10px;
+            color: #999999;
+        }
+
+        .submit input {
+            width: 100px; 
+            height: 40px;
+            background-color: #474E69; 
+            color: #FFF;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;		
+        }
+        form ::placeholder{
+            color: #474E69;
+        }
+    </style>
+</head>
+<body>
+    <h2>Created a new bike</h2>
+    <form class="form" method="POST">
+        <div class="main">
+            <p class="Model">
+                <input type="text" name="Model" id="Model" placeholder="e.g.Honda">
+                <label for="Model">Model</label>
+            </p>
+            <p class="Daily fee">
+                <input type="text" name="Daily fee" id="Daily fee" placeholder="1000">
+                <label for="Daily fee">Daily fee(VND)</label>
+            </p>
+            <p class="Image">
+                <input type="text" name="Image" id="Image" placeholder="http://hondaxemay/">
+                <label for="Image">Image</label>
+            </p>
+            <p class="Year">
+                <input type="text" name="Year" id="Year" placeholder="e.g.2013">
+                <label for="Year">Year</label>
+            </p>
+            <p class="Telephone">
+                <input type="text" name="Telephone" id="Telephone" placeholder="+84xxxxxxxx">
+                <label for="Telephone">Telephone</label>
+            </p>
+            <p class="text">
+                <textarea name="text" id="text" cols="15" rows="3" placeholder="Add description"></textarea>
+            </p>
+            <p class="submit">
+                <input type="submit" value="submit">
+            </p>
+        </div>
+    </form>
+</body>
+</html>
