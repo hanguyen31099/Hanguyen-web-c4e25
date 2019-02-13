@@ -5,16 +5,7 @@ mlap.connect()
 app = Flask(__name__)
 f_objects = Bike.objects()
 k_objects = Register.objects()
-@app.route('/',methods=["GET","POST"])
-def create_new_register():
-    if request.method == "GET":
-        return render_template('login.html')
-    elif request.method == "POST":
-        username = request.form["username"]
-        password = request.form["password"]
-        k = Register(username=username,password=password)
-        k.save()
-        return "OK"
+
 @app.route('/new_bike',methods=["GET","POST"])
 def new_bike():
     if request.method == "GET":
